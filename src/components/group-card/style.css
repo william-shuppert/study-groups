@@ -1,0 +1,28 @@
+.group-card {
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 8px 10px rgb(15,15,15,.2);
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.group-card h2 {
+    margin: 0;
+}
+
+.group-card .options {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.group-card .delete, .group-card .edit {
+    transition: all ease .2s;
+}
+
+.group-card .delete:hover {
+    color: rgb(255, 99, 99);
+}

@@ -1,0 +1,28 @@
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+nav .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .links {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 50px;
+}
+
+nav a, nav button {
+    margin: 0 10px;
+}
+
+nav a.active {
+    border-bottom: solid 4px var(--secondaryColor);
+}
