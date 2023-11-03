@@ -20,6 +20,7 @@ nav .wrapper {
 
 nav a {
     border-bottom: solid 4px transparent;
+    color: white;
 }
 
 nav a.active {

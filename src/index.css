@@ -2,6 +2,7 @@
 
 :root {
   --secondaryColor: rgb(255,213,79);
+  --textColor: #213547;
 
   font-family: 'Roboto', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -33,7 +34,7 @@ p {
 
 a {
   font-weight: 500;
-  color: white;
+  color: var(--textColor);
   text-decoration: inherit;
 }
 a:hover {
@@ -78,10 +79,7 @@ input {
     color: #213547;
     background-color: #ffffff;
   }
-  a:hover {
-    color: #747bff;
-  }
-  button {
+  button, input[type=submit] {
     background-color: #f9f9f9;
   }
 }

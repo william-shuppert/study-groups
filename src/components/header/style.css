@@ -3,7 +3,12 @@ header {
     margin-bottom: 30px;
 }
 
+header h1 {
+    color: white;
+}
+
 .banner {
+    background-color: var(--secondaryColor);
     position: absolute;
     left: 0;
 

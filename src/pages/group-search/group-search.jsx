@@ -32,10 +32,13 @@ const SearchGroups = () => {
         <input type='text' value={search} onChange={e => setSearch(e.target.value)} placeholder='Search for a class here!'/>
       </div>
 
-      {displayedGroups.map(group => 
-        <GroupCard key={group.id} group={group} onDelete={onDelete} />
-        // <div key={group.id}>{group.name}</div>
-      )}
+      <div className="groups">
+        {displayedGroups.map(group => 
+          <GroupCard key={group.id} group={group} onDelete={onDelete} />
+          // <div key={group.id}>{group.name}</div>
+        )}
+      </div>
+
     </div>
   )
 }
