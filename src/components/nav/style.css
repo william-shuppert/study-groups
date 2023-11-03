@@ -3,6 +3,7 @@ nav {
     top: 0;
     width: 100%;
     z-index: 100;
+    margin-top: 5px;
 }
 
 nav .wrapper {
@@ -11,18 +12,24 @@ nav .wrapper {
     justify-content: space-between;
 }
 
-nav .links {
-    padding: 10px;
+.links {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
-    height: 50px;
+    gap: 10px;
 }
 
-nav a, nav button {
-    margin: 0 10px;
+nav a {
+    border-bottom: solid 4px transparent;
 }
 
 nav a.active {
     border-bottom: solid 4px var(--secondaryColor);
+}
+
+nav .logo {
+    margin-left: 0;
+}
+
+nav .auth-link {
+    margin-right: 0;
 }

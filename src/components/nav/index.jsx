@@ -17,7 +17,7 @@ const Nav = () => {
             <div className="wrapper">
                 <Link to='/' className="logo">Miami Social</Link>
 
-                <div className="NavLinks">
+                <div className="links">
                     <NavLink to=''>Home</NavLink>
                     <NavLink to='groups' end>Search</NavLink>
                     {auth.user ? (
@@ -26,7 +26,7 @@ const Nav = () => {
                             <button onClick={handleLogout}>Logout</button>
                         </>
                     ) : (
-                        <NavLink to='auth'>Login</NavLink>
+                        <NavLink to='auth' className='auth-link'>Login</NavLink>
                     )}
                 </div>
             </div>
