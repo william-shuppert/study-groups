@@ -6,7 +6,8 @@ const Home = () => {
     <div>
         <Header title="Home" />
 
-        Our group project is all about facilitating the formation of effective study groups!
+        <h2>Objective</h2>
+        Our group project is all about finding and facilitating effective study groups!
     </div>
   )
 }
