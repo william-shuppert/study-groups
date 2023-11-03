@@ -1,7 +1,5 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Routes, Route, HashRouter } from 'react-router-dom'
 import Layout from './components/layout'
 import Home from './pages/home'
 import Auth from './pages/auth'
@@ -11,7 +9,7 @@ import AuthProvider from './contexts/authContext'
 
 function App() {
   return (
-    <BrowserRouter basename='/study-groups'>
+    <HashRouter>
       <AuthProvider>
         <Routes>
           <Route path="/" element={<Layout />}>
@@ -24,7 +22,7 @@ function App() {
           </Route>
         </Routes>
       </AuthProvider>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
