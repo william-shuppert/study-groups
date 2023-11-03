@@ -47,15 +47,17 @@ const Auth = () => {
             <Header title={state}/>
 
             <form onSubmit={e => handleSubmit(e)} className='auth-form'>
-                <div className="input-group">
-                    <label>Username</label>
-                    <input type='text' value={username} onChange={e => setUsername(e.target.value)} />
-                </div>
 
+                <div className="input-groups">
+                    <div className="input-group">
+                        <label>Username</label>
+                        <input type='text' value={username} onChange={e => setUsername(e.target.value)} />
+                    </div>
 
-                <div className="input-group">
-                    <label>Password</label>
-                    <input type='password' value={password} onChange={e => setPassword(e.target.value)} />
+                    <div className="input-group">
+                        <label>Password</label>
+                        <input type='password' value={password} onChange={e => setPassword(e.target.value)} />
+                    </div>
                 </div>
 
                 <p>
