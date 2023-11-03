@@ -11,7 +11,7 @@ import AuthProvider from './contexts/authContext'
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/study-groups'>
       <AuthProvider>
         <Routes>
           <Route path="/" element={<Layout />}>
