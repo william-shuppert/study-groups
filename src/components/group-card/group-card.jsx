@@ -14,7 +14,7 @@ const GroupCard = ({ group: {id, name, ownerId, description}, onDelete }) => {
 
     return (
         <div className='group-card'>
-            {auth.user.id === ownerId ? <div className='options'>
+            {auth?.user?.id === ownerId ? <div className='options'>
                 <Link to='/groups/edit' className='edit'>Edit</Link>
                 <button onClick={handleDelete} className='delete'>Delete</button>
             </div>: ''}
