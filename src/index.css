@@ -2,7 +2,7 @@
 
 :root {
   --secondaryColor: rgb(255,213,79);
-  --textColor: #213547;
+  --textColor: white;
 
   font-family: 'Roboto', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -78,6 +78,8 @@ input {
   :root {
     color: #213547;
     background-color: #ffffff;
+
+    --textColor: #213547;
   }
   button, input[type=submit] {
     background-color: #f9f9f9;
