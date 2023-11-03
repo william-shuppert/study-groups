@@ -18,6 +18,10 @@
   -webkit-text-size-adjust: 100%;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 h1, h2 {
   font-family: 'Roboto';
   font-weight: lighter;
@@ -45,9 +49,10 @@ h1 {
   line-height: 1.1;
 }
 
-button {
+button, input[type=submit] {
   border-radius: 8px;
   border: 1px solid transparent;
+  text-transform: capitalize;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
@@ -56,12 +61,16 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
-  border-color: #646cff;
+button:hover, input[type=submit]:hover {
+  border-color: var(--secondaryColor);
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+input {
+  padding: 5px;
 }
 
 @media (prefers-color-scheme: light) {
