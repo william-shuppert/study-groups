@@ -30,7 +30,7 @@ const ManageGroup = ({ state }) => {
 
           <div className="input-group">
             <label>Description</label>
-            <textarea onChange={e => setDescription(e.target.value)} value={description}></textarea>
+            <textarea onChange={e => setDescription(e.target.value)} value={description} required></textarea>
           </div>
         </div>
 

@@ -36,6 +36,7 @@ a {
   font-weight: 500;
   color: var(--textColor);
   text-decoration: inherit;
+  transition: color ease .2s;
 }
 a:hover {
   color: var(--secondaryColor);
