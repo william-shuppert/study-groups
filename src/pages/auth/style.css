@@ -1,14 +1,3 @@
-.auth-form .input-group {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 5px;
-}
-
-.auth-form .input-group:first-of-type {
-    margin-bottom: 15px;
-}
-
 .auth-form p {
     color: gray;
 }
