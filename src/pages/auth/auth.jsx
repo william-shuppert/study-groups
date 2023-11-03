@@ -27,7 +27,7 @@ const Auth = () => {
         }
 
         auth.setUser(user)
-        navigate('/')
+        navigate('/groups')
     }
 
     const handleRegister = () => {
@@ -39,7 +39,7 @@ const Auth = () => {
         }
 
         auth.setUser(user)
-        navigate('/')
+        navigate('/groups')
     }
 
     return (
