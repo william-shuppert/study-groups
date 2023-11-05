@@ -58,16 +58,25 @@ const ManageGroup = ({ state }) => {
           </div>
 
 
-        {/*           
-          <div className="input-group">
+                  
+          {/* <div className="input-group">
             <label>Location</label>
             <input type='text' required/>
           </div>
-
           
           <div className="input-group">
             <label>Time</label>
             <input type='text' required/>
+          </div>
+
+          <div className="input-group">
+            <label>Personality</label>
+            <input type='text' required/>
+          </div>
+
+          <div className="input-group">
+            <label>Group Goal</label>
+            <input type='text' placeholder='serious or relaxed' required/>
           </div> */}
         </div>
 

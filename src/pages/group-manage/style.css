@@ -1,3 +1,13 @@
 .manage-group-form input[type=submit] {
     margin-top: 32px;
 }
+
+
+.manage-group-form textarea {
+    width: 100%;
+    min-height: 100px;
+}
+
+.manage-group-form input {
+    width: 100%;
+}
