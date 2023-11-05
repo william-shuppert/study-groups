@@ -45,3 +45,14 @@ export const deleteGroup = (id) => {
     groups = groups.filter(group => group.id != id)
     localStorage.setItem('groups', JSON.stringify(groups))
 }
+
+export const editGroup = (editedGroup) => {
+    let groups = JSON.parse(localStorage.getItem('groups')) ?? defaultGroups
+    let len = groups.length
+    groups = groups.filter(group => group.id != editedGroup.id)
+    if (len == groups.length) return false
+
+    groups.push(editedGroup)
+    localStorage.setItem('groups', JSON.stringify(groups))
+    return true
+}

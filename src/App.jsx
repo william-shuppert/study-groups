@@ -15,7 +15,7 @@ function App() {
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="auth" element={<Auth />} />
-            <Route path="groups" element={<SearchGroups />} />
+            <Route path="search" element={<SearchGroups />} />
             <Route path="groups/edit" element={<EditGroup state='edit'/>} />
             <Route path="groups/create" element={<EditGroup state='create'/>} />
             {/* <Route path="*" element={<NoPage />} /> */}

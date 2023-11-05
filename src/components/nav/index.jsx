@@ -19,7 +19,7 @@ const Nav = () => {
 
                 <div className="links">
                     <NavLink to=''>Home</NavLink>
-                    <NavLink to='groups' end>Search</NavLink>
+                    <NavLink to='search' end>Search</NavLink>
                     {auth.user ? (
                         <>
                             <NavLink to='groups/create' end>Create</NavLink>
