@@ -11,6 +11,7 @@ const Auth = () => {
     const [state, setState] = useState('login')
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
+    const [confirmPassword, setConfirmPassword] = useState('')
 
     const handleSubmit = e => {
         e.preventDefault()
@@ -31,6 +32,12 @@ const Auth = () => {
     }
 
     const handleRegister = () => {
+
+        if (password != confirmPassword) {
+            alert("Passwords do not match")
+            return
+        }
+
         const user = createUser({ username, password })
 
         if (!user) {
@@ -58,6 +65,13 @@ const Auth = () => {
                         <label>Password</label>
                         <input type='password' value={password} onChange={e => setPassword(e.target.value)} required/>
                     </div>
+
+                    { state == 'register' ?
+                        <div className="input-group">
+                            <label>Confirm Password</label>
+                            <input type='password' value={confirmPassword} onChange={e => setConfirmPassword(e.target.value)} required/>
+                        </div> : ''
+                    }
                 </div>
 
                 <p>
