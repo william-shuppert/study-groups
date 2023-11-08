@@ -16,7 +16,13 @@ const SearchGroups = () => {
   }, [])
 
   useEffect(() => {
-    const matches = groups.filter(group => group.name.toLowerCase().includes(search.toLowerCase()))
+    const matches = groups.filter(group => 
+      group.name.toLowerCase().includes(search.toLowerCase()) ||
+      group.course.toLowerCase().includes(search.toLowerCase()) ||
+      group.professor.toLowerCase().includes(search.toLowerCase()) ||
+      group.description.toLowerCase().includes(search.toLowerCase()) ||
+      group.days.includes(search.toLowerCase())
+    )
     setDisplayedGroups(matches)
   }, [search, groups])
 
