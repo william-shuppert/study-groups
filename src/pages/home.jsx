@@ -1,7 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from '../components/header/header'
 
 const Home = () => {
+
+  useEffect(() => {
+    const buildVersion = '11/8/23'
+
+    const clientVersion = localStorage.getItem('version')
+
+    if (!clientVersion || clientVersion != buildVersion) { // reset local storage
+      localStorage.setItem('version', buildVersion)
+
+      localStorage.removeItem('users')
+      localStorage.removeItem('groups')
+    }
+  }, [])
+
   return (
     <div>
         <Header title="Home" />
