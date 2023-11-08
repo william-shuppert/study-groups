@@ -14,8 +14,9 @@
     top: 0;
     right: 0;
     display: flex;
-    gap: 10px;
+    gap: 15px;
     align-items: center;
+    padding: 8px;
 }
 
 .group-card .delete, .group-card .edit {
@@ -24,4 +25,10 @@
 
 .group-card .delete:hover {
     color: rgb(255, 99, 99);
+}
+
+.group-card .info {
+    text-transform: capitalize;
+    /* color: gray; */
+    font-weight: 100;
 }

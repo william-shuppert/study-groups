@@ -2,6 +2,7 @@
   max-width: 900px;
   margin: 0 auto;
   padding: 0 15px;
+  margin-bottom: 100px;
 }
 
 .input-group {
@@ -19,4 +20,25 @@
 
 .multi-select {
   width: 100%;
+}
+
+input, textarea {
+  border: solid 1px hsl(0, 0%, 80%);
+  border-radius: 4px;
+  padding: 6px 12px;
+  height: 38px;
+}
+
+.select__input {
+  height: initial;
+}
+
+@media (prefers-color-scheme: dark) {
+  .select__control {
+    background-color: rgba(255,255,255,.1) !important;
+  }
+  
+  .select__menu {
+    background-color: rgb(52, 52, 52) !important;
+  }
 }

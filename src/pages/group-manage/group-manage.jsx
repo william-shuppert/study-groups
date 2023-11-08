@@ -5,6 +5,7 @@ import useAuth from '../../hooks/useAuth'
 import { useLocation, useNavigate } from 'react-router'
 import Select from 'react-select';
 import './style.css'
+import DaySelection from '../../components/day-selection/day-selection'
 
 const daysOptions = [
   { value: 'sunday', label: 'Sunday' },
@@ -97,16 +98,7 @@ const ManageGroup = ({ state }) => {
 
           <div className="input-group input-group-select">
             <label>Meeting Days</label>
-            <Select
-              value={days.map(day => ({label: day, value: day}))}
-              isMulti
-              name="meeting-days"
-              options={daysOptions}
-              className="multi-select"
-              classNamePrefix="select"
-              onChange={selected => setDays(selected.map(option => option.value))}
-              required
-            />
+            <DaySelection onChange={daysOnChange} value={days.map(day => ({label: day, value: day}))} required/>
           </div>
 
           {
