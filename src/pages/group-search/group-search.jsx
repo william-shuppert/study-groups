@@ -28,8 +28,7 @@ const SearchGroups = () => {
         group.name.toLowerCase().includes(search.toLowerCase()) ||
         group.course.toLowerCase().includes(search.toLowerCase()) ||
         group.professor.toLowerCase().includes(search.toLowerCase()) ||
-        group.description.toLowerCase().includes(search.toLowerCase()) ||
-        group.days.includes(search.toLowerCase())) // keyword filter
+        group.description.toLowerCase().includes(search.toLowerCase())) // keyword filter
       && (group.time >= timeFilter[0] && group.time <= timeFilter[1]) // time filter
       && (courseFilter == '' || group.course.toLowerCase().replace(/\s/g, '').includes(courseFilter.toLowerCase().replace(/\s/g, ''))) // course filter
       && (dayFilter.length == 0 || dayFilter.some(day=>group.days.includes(day.value))) // day filter
@@ -76,7 +75,7 @@ const SearchGroups = () => {
 
       </div>
 
-      <h2>Search Results:</h2>
+      <h2>Search Results ({displayedGroups.length}):</h2>
 
       <div className="groups">
         {displayedGroups.map(group => 
