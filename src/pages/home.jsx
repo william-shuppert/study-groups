@@ -4,7 +4,7 @@ import Header from '../components/header/header'
 const Home = () => {
 
   useEffect(() => {
-    const buildVersion = '11/15/23'
+    const buildVersion = '11/15/23-10:54'
 
     const clientVersion = localStorage.getItem('version')
 

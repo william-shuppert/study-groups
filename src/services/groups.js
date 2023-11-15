@@ -34,10 +34,10 @@ const defaultGroups = [
         days: ['wednesday'],
         time: '15:00'
     },
-    {
+        {
         id: 'a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d',
         name: 'Math Study Session for MAT210',
-        ownerId: '6a7b8c9d-e1f2-3a4b-5c6d-7e8f9a0b1c2d',
+        ownerId: '5f620a3b-16bf-40cf-94b6-da3850f3f7e7',
         description: "Planning to tackle some challenging MAT210 problems. Join me in the library for a collaborative study session!",
         members: [],
         course: 'MAT 210',
@@ -48,7 +48,7 @@ const defaultGroups = [
     {
         id: 'd5e4f3c2-b1a0-9c8d-7e6f-5a4b2c1d3e0f',
         name: 'Chemistry Lab Partners Needed',
-        ownerId: '1a0b2c3d-4e5f-6a7b-8c9d-0e1f2a3b4c5d',
+        ownerId: '5f620a3b-16bf-40cf-94b6-da3850f3f7e7',
         description: "Looking for lab partners for upcoming chemistry experiments. Let's make sure we don't blow anything up!",
         members: [],
         course: 'CHE 202',
@@ -59,13 +59,57 @@ const defaultGroups = [
     {
         id: '9a8b7c6d5-e4f3a2b1-0c9d8e7f-6a5b4c3d2e1f',
         name: 'History Discussion Group',
-        ownerId: '7e6f5a4b-3c2d1e0f-9a8b2c7d-4e3f1a5b',
+        ownerId: '5f620a3b-16bf-40cf-94b6-da3850f3f7e7',
         description: "Let's dive into some interesting historical topics and prepare for the upcoming history quiz together!",
         members: [],
         course: 'HIS 101',
         professor: 'Prof. Turner',
         days: ['tuesday', 'thursday'],
         time: '11:30'
+    },
+    {
+        id: '7d8e9f10-a1b2-c3d4-e5f6-6a7b8c9d0e1f',
+        name: 'ENG313 Essay Review Session',
+        ownerId: '5f620a3b-16bf-40cf-94b6-da3850f3f7e7',
+        description: "Let's review and provide feedback on each other's ENG313 essays. Bring your drafts and let's improve together!",
+        members: [],
+        course: 'ENG 313',
+        professor: 'Prof. Thompson',
+        days: ['friday'],
+        time: '18:00'
+    },
+    {
+        id: '11a22b33-c44d-55e66f77-88a99b00c11d',
+        name: 'Physics Study Group for PHY200',
+        ownerId: '5f620a3b-16bf-40cf-94b6-da3850f3f7e7',
+        description: "Join me in the science building to review PHY200 concepts. All physics enthusiasts welcome!",
+        members: [],
+        course: 'PHY 200',
+        professor: 'Prof. Anderson',
+        days: ['tuesday', 'thursday'],
+        time: '17:00'
+    },
+    {
+        id: '22334455-66778899-aa11bbcc-ddee00ff1122',
+        name: 'Late-Night Coding Session for CSE310',
+        ownerId: '5f620a3b-16bf-40cf-94b6-da3850f3f7e7',
+        description: "Need some company while working on CSE310 projects? Let's code together into the night!",
+        members: [],
+        course: 'CSE 310',
+        professor: 'Prof. Davis',
+        days: ['wednesday', 'friday'],
+        time: '21:30'
+    },
+    {
+        id: '778899aa-bbcc0011-22334455-66778899aabb',
+        name: 'Chemistry Exam Prep for CHE105',
+        ownerId: '5f620a3b-16bf-40cf-94b6-da3850f3f7e7',
+        description: "Getting ready for the CHE105 exam. Let's review notes and solve practice problems together!",
+        members: [],
+        course: 'CHE 105',
+        professor: 'Prof. Rodriguez',
+        days: ['monday'],
+        time: '14:00'
     }
 ]
 
