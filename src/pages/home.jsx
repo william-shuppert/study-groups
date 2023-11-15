@@ -4,7 +4,7 @@ import Header from '../components/header/header'
 const Home = () => {
 
   useEffect(() => {
-    const buildVersion = '11/8/23'
+    const buildVersion = '11/15/23'
 
     const clientVersion = localStorage.getItem('version')
 
@@ -14,7 +14,7 @@ const Home = () => {
       localStorage.removeItem('users')
       localStorage.removeItem('groups')
     }
-  }, [])
+  })
 
   return (
     <div>

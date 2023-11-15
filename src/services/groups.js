@@ -33,6 +33,39 @@ const defaultGroups = [
         professor: 'Prof. Steve',
         days: ['wednesday'],
         time: '15:00'
+    },
+    {
+        id: 'a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d',
+        name: 'Math Study Session for MAT210',
+        ownerId: '6a7b8c9d-e1f2-3a4b-5c6d-7e8f9a0b1c2d',
+        description: "Planning to tackle some challenging MAT210 problems. Join me in the library for a collaborative study session!",
+        members: [],
+        course: 'MAT 210',
+        professor: 'Prof. Johnson',
+        days: ['thursday', 'friday'],
+        time: '16:00'
+    },
+    {
+        id: 'd5e4f3c2-b1a0-9c8d-7e6f-5a4b2c1d3e0f',
+        name: 'Chemistry Lab Partners Needed',
+        ownerId: '1a0b2c3d-4e5f-6a7b-8c9d-0e1f2a3b4c5d',
+        description: "Looking for lab partners for upcoming chemistry experiments. Let's make sure we don't blow anything up!",
+        members: [],
+        course: 'CHE 202',
+        professor: 'Prof. Martinez',
+        days: ['monday', 'wednesday'],
+        time: '10:00'
+    },
+    {
+        id: '9a8b7c6d5-e4f3a2b1-0c9d8e7f-6a5b4c3d2e1f',
+        name: 'History Discussion Group',
+        ownerId: '7e6f5a4b-3c2d1e0f-9a8b2c7d-4e3f1a5b',
+        description: "Let's dive into some interesting historical topics and prepare for the upcoming history quiz together!",
+        members: [],
+        course: 'HIS 101',
+        professor: 'Prof. Turner',
+        days: ['tuesday', 'thursday'],
+        time: '11:30'
     }
 ]
 
